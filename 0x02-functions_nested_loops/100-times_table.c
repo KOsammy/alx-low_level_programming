@@ -1,15 +1,16 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_times_table - prints the n times table, starting with 0
- * @n: integer to specify the size of the times table
+ * @n: the number of times tables to print
  *
- * Return: void
+ * Description: If n is greater than 15 or less than 0, the function
+ * does not print anything. Prints each row of the times table in a
+ * specified format.
  */
 void print_times_table(int n)
 {
-    int i, j, product;
+    int i, j;
 
     if (n < 0 || n > 15)
         return;
@@ -18,13 +19,26 @@ void print_times_table(int n)
     {
         for (j = 0; j <= n; j++)
         {
-            product = i * j;
+            int result = i * j;
+
             if (j == 0)
-                printf("%d", product);
+                _putchar('0' + result);
             else
-                printf(", %3d", product);
+            {
+                _putchar(',');
+                _putchar(' ');
+                if (result >= 100)
+                    _putchar('0' + result / 100);
+                else
+                    _putchar(' ');
+                if (result >= 10)
+                    _putchar('0' + (result / 10) % 10);
+                else
+                    _putchar(' ');
+                _putchar('0' + result % 10);
+            }
         }
-        printf("\n");
+        _putchar('\n');
     }
 }
 
