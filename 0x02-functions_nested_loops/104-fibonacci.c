@@ -10,24 +10,24 @@
  */
 int main(void)
 {
-    int count = 0;
-    unsigned long fib1 = 1, fib2 = 2, next;
+	int count;
+	unsigned long fib1 = 1, fib2 = 2, next;
 
-    printf("%lu, %lu", fib1, fib2);
-    count = 2;
+	printf("%lu, %lu", fib1, fib2);
+	count = 2;
 
-    while (count < 98)
-    {
-        next = fib1 + fib2;
-        fib1 = fib2;
-        fib2 = next;
+	while (count < 98)
+	{
+		next = fib1 + fib2;
+		fib1 = fib2;
+		fib2 = next;
 
-        printf(", %lu", next);
-        count++;
-    }
+		printf(", %lu", next);
+		count++;
+	}
 
-    printf("\n");
+	printf("\n");
 
-    return (0);
+	return (0);
 }
 
