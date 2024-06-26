@@ -11,20 +11,20 @@
  */
 int main(void)
 {
-    long int fib1 = 1, fib2 = 2, next, sum = 2; /* Initialize sum with first even number 2 */
-    
-    while (fib2 <= 4000000)
-    {
-        next = fib1 + fib2;
-        fib1 = fib2;
-        fib2 = next;
-        
-        if (fib2 % 2 == 0)
-            sum += fib2;
-    }
-    
-    printf("%ld\n", sum);
-    
-    return (0);
+	long int fib1 = 1, fib2 = 2, next, sum = 2; /* Initialize sum with first even number 2 */
+
+	while (fib2 <= 4000000)
+	{
+		next = fib1 + fib2;
+		fib1 = fib2;
+		fib2 = next;
+
+		if (fib2 % 2 == 0)
+			sum += fib2;
+	}
+
+	printf("%ld\n", sum);
+
+	return (0);
 }
 
