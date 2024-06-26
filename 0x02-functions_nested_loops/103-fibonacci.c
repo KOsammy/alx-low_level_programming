@@ -11,7 +11,7 @@
  */
 int main(void)
 {
-    long int fib1 = 1, fib2 = 2, next, sum = 2; // Initialize sum with first even number 2
+    long int fib1 = 1, fib2 = 2, next, sum = 2; /* Initialize sum with first even number 2 */
     
     while (fib2 <= 4000000)
     {
