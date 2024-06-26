@@ -1,7 +1,5 @@
 #include "main.h"
 
-int _putchar(char c);
-
 /**
  * main - Entry point
  *
@@ -10,12 +8,13 @@ int _putchar(char c);
 int main(void)
 {
     char *str = "_putchar";
+
     while (*str)
     {
         _putchar(*str);
         str++;
     }
     _putchar('\n');
-    return 0;
+    return (0);
 }
 
