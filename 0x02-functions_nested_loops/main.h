@@ -9,6 +9,7 @@ int _isalpha(int b);
 int print_sign(int n);
 int _abs(int d);
 int print_last_digit(int g);
+void jack_bauer(void);
 
 #endif /* MAIN_H */
 
