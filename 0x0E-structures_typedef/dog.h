@@ -33,5 +33,15 @@ void init_dog(struct dog *d, char *name, float age, char *owner);
  */
 void print_dog(struct dog *d);
 
+/**
+ * new_dog - creates a new dog
+ * @name: initalises name
+ * @age: initialises age
+ * @owner: initialises owner
+ * Return: pointer to new dog_t
+ */
+dog_t *new_dog(char *name, float age, char *owner);
+
+
 #endif /* DOG_H */
 
